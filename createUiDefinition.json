@@ -8,7 +8,70 @@
         "type": "Microsoft.Common.Section",
         "label": "Basic information",
         "elements": [
-          {}
+          {
+            "name": "yourName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Name",
+            "constraints":
+            {
+              "required": true,
+              "regex": "^[^\"]*$",
+              "validationMessage": "Quotes not allowed"
+            }
+          },
+          {
+            "name": "businessEmail",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Email",
+            "constraints":
+            {
+              "required": true,
+              "regex": "^([\\w-]+(?:\\.[\\w-]+)*)@((?:[\\w-]+\\.)*\\w[\\w-]{0,66})\\.([a-z]{2,6}(?:\\.[a-z]{2})?)$",
+              "validationMessage": "Please enter a valid email address."
+            }
+          },
+          {
+            "name": "companyName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Company",
+            "constraints":
+            {
+              "required": true,
+              "regex": "^[^\"]*$",
+              "validationMessage": "Quotes not allowed"
+            }
+          },
+          {
+            "name": "phone",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Phone",
+            "constraints":
+            {
+              "required": true,
+              "regex": "^[^\"]*$",
+              "validationMessage": "Quotes not allowed"
+            }
+          },
+          {
+            "name": "contact",
+            "type": "Microsoft.Common.OptionsGroup",
+            "label": "Have a Hadoop Expert contact me",
+            "defaultValue": "Yes",
+            "toolTip": "If you click Yes, a Hadoop implementation expert from Hortonworks will contact you by phone or email.",
+            "constraints":
+            {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            }
+          }
         ]
       }
     ],
