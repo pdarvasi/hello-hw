@@ -6,7 +6,10 @@
       {
         "name": "Basics",
         "type": "Microsoft.Common.Section",
-        "label": "Basic information"
+        "label": "Basic information",
+        "elements": [
+          {}
+        ]
       }
     ],
     "steps": [
