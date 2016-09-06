@@ -6,7 +6,7 @@
       {
         "name": "Basics",
         "type": "Microsoft.Common.Section",
-        "label": "Please tell us about yourself",
+        "label": "Basic information",
         "elements": [
 
         ]
